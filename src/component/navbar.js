@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 function navbar() {
-  return <>
-      
-  </>;
+  return (
+    <>
+      <div>asdfgh</div>
+    </>
+  );
 }
 
 export default navbar;
