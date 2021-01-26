@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
 
+
+
 function Navbar() {
   return (
     <>
-      <div></div>
+      <div className="navbar">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </>
   );
 }
