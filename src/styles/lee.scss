@@ -1,0 +1,74 @@
+.headerBanner {
+  img {
+    width: 100vw;
+    background-color: #fff;
+  }
+}
+.footerFrame {
+  .footerUp {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 630px;
+      height: 330px;
+      background-size: contain;
+      z-index: -1;
+      box-sizing: border-box;
+    }
+    &::before {
+      bottom: 0;
+      left: 0px;
+      transform: scaleX(-1);
+      background: url("../images/footerTree.png") no-repeat left bottom;
+      background-size: contain;
+    }
+    &::after {
+      bottom: 0;
+      right: 0px;
+      background: url("../images/footerTree.png") no-repeat right bottom;
+      background-size: contain;
+    }
+
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      .logo {
+        width: 40%;
+      }
+      .tel,
+      .mail {
+        a {
+          margin: 0 10px;
+          text-decoration: none;
+        }
+        a:link {
+          color: #000;
+        }
+        a:hover {
+          color: rgb(207, 167, 34);
+        }
+      }
+      .social {
+        margin-top: 10px;
+        .fb {
+          width: 100px;
+          height: 50px;
+          border: #000 solid 1px;
+          border-radius: 10%;
+          padding: 5px;
+        }
+      }
+    }
+    .feet {
+      position: absolute;
+      bottom: 0;
+      background-color: rgb(110, 73, 3);
+      width: 100vw;
+      height: 50px;
+    }
+  }
+}
