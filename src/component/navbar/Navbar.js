@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
-
-
+import Menu from "./Menu";
+import Member from "./Member";
 
 function Navbar() {
   return (
     <>
       <div className="navbar">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <Menu />
+        <Member />
       </div>
     </>
   );
