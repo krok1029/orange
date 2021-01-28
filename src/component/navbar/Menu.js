@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-
-
-function Navbar() {
+function Menu(props) {
   return (
     <>
-      <div className="navbar">
+      <div className="navbarMenu">
         <ul>
           <li>橙子傳承</li>
           <li>橙子選擇</li>
@@ -18,4 +16,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Menu;

@@ -1,0 +1,10 @@
+@import "./menu";
+@import "./member";
+
+.navbar {
+  width: 100vw;
+  padding: 1rem 1rem 0 1rem;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
