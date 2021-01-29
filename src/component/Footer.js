@@ -1,4 +1,6 @@
 import footerLogo from "../images/logo.png";
+import { FaFacebookF } from "react-icons/fa";
+import { IoMdLock } from "react-icons/io";
 
 function Footer() {
   return (
@@ -22,12 +24,23 @@ function Footer() {
           </div>
           <div className="social">
             <a href="https://www.facebook.com" className="fb">
+              <FaFacebookF />
               粉絲專頁
             </a>
           </div>
-          <div className="sub"></div>
+          <div className="sub">
+            <input type="text" placeholder="電子報 / 請輸入 E-MAIL" />
+            <div>
+              <a href=" ">訂閱</a>
+              <a href=" ">退訂</a>
+            </div>
+          </div>
         </div>
-        <div className="feet"></div>
+        <div className="feet">
+          <IoMdLock />
+          採用全球最先進SSL 256bit | 建議使用Chrome、Firefox、Safari最新版本瀏覽
+          | Design by OrangeThief-SS105
+        </div>
       </div>
     </footer>
   );
