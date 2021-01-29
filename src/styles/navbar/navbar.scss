@@ -1,9 +1,10 @@
 @import "./menu";
 @import "./member";
+@import "./logo";
 
 .navbar {
   width: 100vw;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1.5rem 2rem 0 2rem;
   position: fixed;
   display: flex;
   justify-content: flex-end;
