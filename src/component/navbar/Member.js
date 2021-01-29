@@ -5,13 +5,13 @@ function Member(props) {
   return (
     <>
       <div className="navbarMember">
-        <div className="memberIcon">
-          <GoPerson style={{ color: "#591f00" }} />
-        </div>
-        <div className="memberIcon">
-          <IoCartSharp style={{ color: "#591f00" }} />
+        <a href="" className="memberIcon">
+          <GoPerson color={"#591f00"} size={20} />
+        </a>
+        <a href="" className="memberIcon">
+          <IoCartSharp color={"#591f00"} size={20} />
           <span>(0)</span>
-        </div>
+        </a>
       </div>
     </>
   );
