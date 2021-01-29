@@ -6,10 +6,10 @@ function Member(props) {
     <>
       <div className="navbarMember">
         <div className="memberIcon">
-          <GoPerson style={{ color: "#591f00" }} />
+          <GoPerson color={"#591f00"} size={20} />
         </div>
         <div className="memberIcon">
-          <IoCartSharp style={{ color: "#591f00" }} />
+          <IoCartSharp color={"#591f00"} size={20} />
           <span>(0)</span>
         </div>
       </div>
