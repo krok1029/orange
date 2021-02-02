@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Member from "./navbar/Member";
 import Menu from "./navbar/Menu";
 import NavLogo from "./navbar/NavLogo";
+import MemberLogin from "./navbar/MemberLogin";
 
 function Navbar() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function Navbar() {
         <Menu />
         <Member />
       </div>
+      <MemberLogin />
     </>
   );
 }
