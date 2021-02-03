@@ -6,15 +6,15 @@ function Member(props) {
   return (
     <>
       <div className="navbarMember">
-        <a href="##" className="memberIcon">
-          <GoPerson
-            color={"#591f00"}
-            size={20}
-            onClick={() => {
-              slr(".loginBlock").classList.add("loginAreaAppear");
-              slr(".blackBlock").classList.add("blackBlockAppear");
-            }}
-          />
+        <a
+          className="memberIcon"
+          onClick={() => {
+            slr(".loginBlock").classList.add("loginAreaAppear");
+            slr(".blackBlock").classList.add("blackBlockAppear");
+            return false;
+          }}
+        >
+          <GoPerson color={"#591f00"} size={20} />
         </a>
         <a href="" className="memberIcon">
           <IoCartSharp color={"#591f00"} size={20} />
