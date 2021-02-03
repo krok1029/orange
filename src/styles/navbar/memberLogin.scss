@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+}
+.blackBlock {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+.blackBlockAppear {
+  visibility: visible;
+}
+.loginBlock {
+  background-color: #fff;
+  height: 100vh;
+  width: 22.5rem;
+  position: fixed;
+  right: -22.5rem;
+  z-index: 1;
+  overflow: auto;
+  transition: 0.5s;
+  .CloseArea {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    .loginClose {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 1.5rem 2.25rem 0 0;
+      div {
+        font-size: 0.75rem;
+        color: #333;
+      }
+    }
+  }
+  .loginArea {
+    height: 27.5rem;
+
+    form {
+      padding: 0 3.125rem;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        padding: 1.125rem 0;
+        border-bottom: 1px solid #000;
+        margin: 1.125rem 0 0 0;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: right;
+      }
+      .formArea {
+        margin-top: 1.875rem;
+        .group {
+          display: flex;
+          padding-bottom: 0.625rem;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid #e4e4e4;
+          label {
+            margin: 0.5625rem 0 0.3125rem 0;
+            letter-spacing: 3px;
+            font-weight: 500;
+            font-size: 14px;
+          }
+          input {
+            border: none;
+            height: 2.5rem;
+            min-width: 50%;
+            padding: 0 0.625rem;
+            flex-grow: 1;
+            outline: none;
+          }
+        }
+      }
+      .btn {
+        color: #fff;
+        background-color: #591f00;
+        padding: 0.625rem;
+        margin-bottom: 0.5rem;
+      }
+      .signUp {
+        background-color: #fff;
+        border: 1px solid #e4e4e4;
+        color: #333;
+      }
+      .other {
+        margin-top: 2.5rem;
+        a {
+          color: #696969;
+          font-size: 0.9rem;
+          &:nth-child(1) {
+            margin-right: 0.625rem;
+          }
+          &:nth-child(3) {
+            margin-left: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}
+.loginAreaAppear {
+  right: 0;
+}
