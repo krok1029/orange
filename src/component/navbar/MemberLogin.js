@@ -9,7 +9,6 @@ function MemberLogin(props) {
       <div className="loginBlock">
         <div className="CloseArea">
           <a
-            href="##"
             className="loginClose"
             onClick={() => {
               slr(".loginBlock").classList.remove("loginAreaAppear");
@@ -37,16 +36,12 @@ function MemberLogin(props) {
                 <input type="text" />
               </div>
             </div>
-            <a href="" className="btn">
-              登　入
-            </a>
-            <a href="" className="btn signUp">
-              加入會員
-            </a>
+            <a className="btn">登　入</a>
+            <a className="btn signUp">加入會員</a>
             <div className="other">
-              <a href="">忘記密碼</a>
+              <a>忘記密碼</a>
               <span> | </span>
-              <a href="">重發確認信</a>
+              <a>重發確認信</a>
             </div>
           </form>
         </div>

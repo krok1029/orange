@@ -16,7 +16,7 @@ function Member(props) {
         >
           <GoPerson color={"#591f00"} size={20} />
         </a>
-        <a href="" className="memberIcon">
+        <a className="memberIcon">
           <IoCartSharp color={"#591f00"} size={20} />
           <span>(0)</span>
         </a>
