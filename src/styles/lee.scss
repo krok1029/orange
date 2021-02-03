@@ -122,3 +122,21 @@
     }
   }
 }
+
+.breadcrumb {
+  display: flex;
+  span {
+    a:visited {
+      color: rgb(47, 49, 49);
+    }
+    a:hover {
+      color: rgb(60, 255, 0);
+    }
+    a:active {
+      color: rgb(255, 72, 0);
+    }
+    i::before {
+      content: "/";
+    }
+  }
+}
