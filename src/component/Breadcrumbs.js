@@ -16,15 +16,16 @@ function Breadcrumbs(props) {
 
   const path = flattenRoutes(props.routes, "");
   const [loc] = path.filter((e) => e.road.join("") === props.location.pathname);
-  console.log(loc);
+
   const BreadcrumbsComponent = (breadcrumbs) => (
     <div className="breadcrumb">
       {breadcrumbs.road.map((breadcrumb, index) => {
+        console.log(breadcrumbs);
         const link = breadcrumbs.road.slice(0, index + 1).join("");
         return (
           <span key={breadcrumb}>
             <Link to={link}>{breadcrumbs.roadName[index]}</Link>
-            {index < breadcrumbs.road.length - 1 && <i> </i>}
+            {index < breadcrumbs.road.length - 1 && <i></i>}
           </span>
         );
       })}

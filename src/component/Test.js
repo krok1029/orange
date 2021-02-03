@@ -7,6 +7,8 @@ function Test(props) {
   return (
     <div>
       <Breadcrumbs routes={routes} />
+
+      <h1>Hello {props.match.params.id}!</h1>
       <div>test2</div>
     </div>
   );
