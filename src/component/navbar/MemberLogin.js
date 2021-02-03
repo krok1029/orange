@@ -2,18 +2,19 @@ import React, { useState, useEffect } from "react";
 import { GrClose } from "react-icons/gr";
 
 function MemberLogin(props) {
+  const slr = (id) => document.querySelector(id);
   return (
     <>
+      <div className="blackBlock"></div>
       <div className="loginBlock">
         <div className="CloseArea">
           <a
             href="##"
             className="loginClose"
-            onClick={() =>
-              document
-                .querySelector(".loginBlock")
-                .classList.remove("loginAreaAppear")
-            }
+            onClick={() => {
+              slr(".loginBlock").classList.remove("loginAreaAppear");
+              slr(".blackBlock").classList.remove("blackBlockAppear");
+            }}
           >
             <GrClose size={25} />
             <div>CLOSE</div>

@@ -2,6 +2,7 @@
 import { GoPerson } from "react-icons/go";
 import { IoCartSharp } from "react-icons/io5";
 function Member(props) {
+  const slr = (id) => document.querySelector(id);
   return (
     <>
       <div className="navbarMember">
@@ -9,11 +10,10 @@ function Member(props) {
           <GoPerson
             color={"#591f00"}
             size={20}
-            onClick={() =>
-              document
-                .querySelector(".loginBlock")
-                .classList.add("loginAreaAppear")
-            }
+            onClick={() => {
+              slr(".loginBlock").classList.add("loginAreaAppear");
+              slr(".blackBlock").classList.add("blackBlockAppear");
+            }}
           />
         </a>
         <a href="" className="memberIcon">
