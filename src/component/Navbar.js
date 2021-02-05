@@ -3,6 +3,7 @@ import Member from "./navbar/Member";
 import Menu from "./navbar/Menu";
 import NavLogo from "./navbar/NavLogo";
 import MemberLogin from "./navbar/MemberLogin";
+import MemberCart from "./navbar/MemberCart";
 
 function Navbar() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function Navbar() {
         <Member />
       </div>
       <MemberLogin />
+      <MemberCart />
     </>
   );
 }
