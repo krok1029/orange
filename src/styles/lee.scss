@@ -9,111 +9,110 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 630px;
-      height: 330px;
-      background-size: contain;
-      z-index: -1;
-      box-sizing: border-box;
-    }
-    &::before {
-      bottom: 0;
-      left: 0px;
-      transform: scaleX(-1);
-      background: url("../images/footerTree.png") no-repeat left bottom;
-      background-size: contain;
-    }
-    &::after {
-      bottom: 0;
-      right: 0px;
-      background: url("../images/footerTree.png") no-repeat right bottom;
-      background-size: contain;
-    }
 
     .container {
-      margin-left: auto;
-      margin-right: auto;
-      .logo {
-        width: 40%;
-        margin-bottom: 30px;
-      }
-      .tel,
-      .mail {
-        a {
-          margin: 0 10px;
-          text-decoration: none;
+      display: flex;
+      div {
+        margin-bottom: 0.5rem;
+        .logo {
+          width: 40%;
+          margin-bottom: 30px;
         }
-        a:link {
-          color: #000;
-        }
-        a:hover {
-          color: rgb(207, 167, 34);
-        }
-      }
-      .social {
-        margin-top: 30px;
-        a {
-          width: 100px;
-          height: 50px;
-          border: #000 solid 1px;
-          border-radius: 10px;
-          padding: 10px 20px;
-          text-decoration: none;
-        }
-        a:link {
-          color: #000;
-        }
-        a:visited {
-          color: #000;
-        }
-        a:hover {
-          color: rgb(255, 255, 255);
-          background-color: rgb(107, 67, 7);
-        }
-      }
-      .sub {
-        display: flex;
-        box-sizing: border-box;
-        input {
-          margin-top: 30px;
-          background-color: rgb(206, 206, 206);
-          border: none;
-          width: 300px;
-          height: 38px;
-          padding-left: 15px;
-        }
-        div {
-          height: 40px;
-          // width: 128px;
-          margin-top: 30px;
-          padding: 0px;
-          display: flex;
+        .tel,
+        .mail {
           a {
-            color: #fff;
+            margin: 0 10px;
             text-decoration: none;
-            padding: 5px 15px;
-            height: 40px;
-            box-sizing: border-box;
-            line-height: 28px;
-            display: flex;
           }
-          a:nth-child(1) {
-            background-color: rgb(233, 165, 18);
+          a:link {
+            color: #000;
           }
-          a:nth-child(2) {
-            background-color: rgb(179, 175, 175);
+          a:hover {
+            color: rgb(207, 167, 34);
           }
         }
+        .social {
+          margin-top: 30px;
+          a {
+            width: 100px;
+            height: 50px;
+            border: #000 solid 1px;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+          }
+          a:link {
+            color: #000;
+          }
+          a:visited {
+            color: #000;
+          }
+          a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(107, 67, 7);
+          }
+        }
+        .sub {
+          display: flex;
+          box-sizing: border-box;
+          input {
+            margin-top: 30px;
+            background-color: rgb(206, 206, 206);
+            border: none;
+            width: 300px;
+            height: 38px;
+            padding-left: 15px;
+          }
+          div {
+            height: 40px;
+            // width: 128px;
+            margin-top: 30px;
+            padding: 0px;
+            display: flex;
+            a {
+              color: #fff;
+              text-decoration: none;
+              padding: 5px 15px;
+              height: 40px;
+              box-sizing: border-box;
+              line-height: 28px;
+              display: flex;
+            }
+            a:nth-child(1) {
+              background-color: rgb(233, 165, 18);
+            }
+            a:nth-child(2) {
+              background-color: rgb(179, 175, 175);
+            }
+          }
+        }
+      }
+      &::before,
+      &::after {
+        content: "";
+        z-index: -1;
+        flex-grow: 1;
+        display: flex;
+        bottom: 0;
+
+        background: url("../images/footerTree.png") no-repeat;
+        background-size: cover;
+      }
+      &::before {
+        left: 0px;
+        transform: scaleX(-1);
+        background-position: +10px bottom;
+      }
+      &::after {
+        right: 0px;
+        background-position: 10px bottom;
       }
     }
     .feet {
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
+      // position: absolute;
       bottom: 0;
       background-color: rgb(110, 73, 3);
       color: rgb(209, 209, 209);
@@ -122,21 +121,52 @@
     }
   }
 }
-
+.pageSubject {
+  .pageTitle {
+    text-align: left;
+    letter-spacing: 4px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
 .breadcrumb {
   display: flex;
+
   span {
+    a {
+      font-size: 12px;
+      margin: 0.25rem;
+    }
     a:visited {
-      color: rgb(47, 49, 49);
+      color: rgb(94, 94, 94);
     }
     a:hover {
-      color: rgb(60, 255, 0);
+      color: rgb(0, 0, 0);
     }
     a:active {
       color: rgb(255, 72, 0);
     }
     i::before {
-      content: ">";
+      content: "/";
     }
   }
+}
+@media (min-width: 992px) {
+  .sectionContainer {
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .sectionContainer {
+    width: 1170px;
+  }
+}
+
+.sectionContainer {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.2rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }

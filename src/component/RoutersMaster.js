@@ -23,7 +23,9 @@ function RoutersMaster() {
       <Route exact path="/a/:id">
         <Test />
       </Route>
-
+      <Route path="/a">
+        <Redirect to="/a/b1" />
+      </Route>
       <Route path="/">
         <div>404</div>
       </Route>
